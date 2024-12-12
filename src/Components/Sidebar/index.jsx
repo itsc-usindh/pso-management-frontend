@@ -20,6 +20,13 @@ const Sidebar = () => {
             subMenu:null
         },
         {
+            name: "Inventory Items",
+            route: "/inventory",
+            icon: <i className="fas fa-box-open icon"></i>,
+            type: 1,
+            subMenu:null
+        },
+        {
             name: "Purchase",
             route: "/purchase",
             icon: <i className="fas fa-shopping-cart icon"></i>,
@@ -47,13 +54,13 @@ const Sidebar = () => {
             subMenu: [
                 {
                     name: "List Deliveries",
-                    route: "/listdelivery",
+                    route: "/listDelivery",
                     icon: <i className="fas fa-bars icon"></i>,
                     type: 1
                 },
                 {
                     name: "Add Delivery",
-                    route: "/adddelivery",
+                    route: "/addDelivery",
                     icon: <i className="fas fa-plus icon"></i>,
                     type: 1
                 }

@@ -1,10 +1,12 @@
 import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import DashboardLayout from "./Layout/dashboardLayout";
+import { useState } from "react";
+import Login from "./Screens/login";
 import Dashboard from "./Screens/dashboard";
 import ListPurchase from "./Screens/purchase/listPurchase";
 import AddPurchase from "./Screens/purchase/addPurchase";
-import { useState } from "react";
-import Login from "./Screens/login";
+import ListDelivery from "./Screens/delivery/lisDelivery";
+import AddDelivery from "./Screens/delivery/addDelivery";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -14,8 +16,11 @@ function App() {
       <DashboardLayout>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/inventory" element={<ListPurchase />} />
           <Route path="/listPurchase" element={<ListPurchase />} />
           <Route path="/addPurchase" element={<AddPurchase />} />
+          <Route path="/listDelivery" element={<ListDelivery />} />
+          <Route path="/addDelivery" element={<AddDelivery />} />
         </Routes>
       </DashboardLayout> :
 

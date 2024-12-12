@@ -170,7 +170,7 @@
     position: absolute;
     left: 11px;
     top: 12px;
-    background: linear-gradient(0deg, var(--white) 8px, transparent 6px);
+    background: linear-gradient(0deg, var(--white) 9px, transparent 6px);
     padding: 0 5px;
     pointer-events: none;
     transition: all 300ms;
@@ -197,9 +197,16 @@
 .form-input textarea:focus{
     border-color: var(--primary);
 }
+.form-input input.invalid:focus, .form-input textarea.invalid:focus, .form-input input.invalid, .form-input textarea.invalid {
+    border-color: var(--bs-red);
+}
 .form-input input:focus +label,
 .form-input textarea:focus +label{
     color: var(--primary);
+}
+.form-input input.invalid +label,
+.form-input textarea.invalid +label{
+    color: var(--bs-red);
 }
 
 /* Table */
