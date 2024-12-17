@@ -22,7 +22,7 @@ const Login = ({ setIsLoggedIn }) => {
         <div className="light login">
             <div className="slider-container">
                 <div className="slider">
-                    <div className="col-8 px-4">
+                    <div className="col-md-8 pt-4 px-4">
                         <p className="mb-2">WELCOM TO</p>
                         <h2>University of Sindh</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nobis, eum omnis, ipsam ducimus repellendus est molestias dolore pariatur eos vero exercitationem odio cupiditate sit error iste magni ipsa et.</p>

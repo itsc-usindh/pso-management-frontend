@@ -155,13 +155,13 @@ const AddDelivery = () => {
                     <h3 className="ps-3 mt-3 mb-2">Add Items</h3>
 
                     <div className="row align-items-center">
-                        <div className="col-3">
+                        <div className="col-md-3 col-4">
                             {items && <ComboBox options={items} placeholder="-- Select Item --" itemSelectHandler={getSelectedOption} />}
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-3 col-4">
                             <FormInput label={"Quantity max(" + (maxQty) + ")"} value={quantity} disabled={maxQty===0} setValue={(v,vl)=>{setQuantity(v); setValidQuantity(vl)}} type="number" max={maxQty}/>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-3 col-4">
                             <button className="butn" onClick={addItem}>Add</button>
                         </div>
 
@@ -169,7 +169,7 @@ const AddDelivery = () => {
                             {(addedItems) && <Table data={addedItems.map(e=>{return {id:e.inventoryItemId,item:e.item,quantity:e.quantity}})} onEdit={onEditHandler} onDelete={onDeleteHandler} tableOnly isDark isSmall noPagination />}
                         </div>
                     </div>
-                    <div className="ms-auto col-1 mt-3">
+                    <div className="ms-auto col-3 col-md-1 mt-3">
                         <button disabled={addedItems.length === 0} className="butn col-12" onClick={saveHandler}>Save</button>
                     </div>
                 </div>

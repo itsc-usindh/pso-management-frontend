@@ -121,7 +121,7 @@ const AddPurchase = () => {
                     <h2 className="ps-2 mb-4 heading">Add new Purchase</h2>
 
                     <div className="form row">
-                        <div className="col-6 mb-3">
+                        <div className="col-md-6 mb-3">
                             <div className="mb-3">
                                 <FormInput label="Purchase Date" type="date" required setValue={setPurchaseDate} />
                             </div>
@@ -132,7 +132,7 @@ const AddPurchase = () => {
                                 <FormInput label="Office Order" type="file" setValue={setOfficeOrderUrl} />
                             </div>
                         </div>
-                        <div className="col-6 mb-3">
+                        <div className="col-md-6 mb-3">
                             <FormInput label="Vendor Details" required classname="h-100" multiline setValue={setVendorDetails} />
                         </div>
                     </div>
@@ -140,16 +140,16 @@ const AddPurchase = () => {
                     <h3 className="ps-3 mt-3 mb-2">Add Items</h3>
 
                     <div className="row align-items-center">
-                        <div className="col-3">
+                        <div className="col-3 col-md-3">
                             {items&&<ComboBox options={items} placeholder="-- Select Item --" itemSelectHandler={getSelectedOption} />}
                         </div>
-                        <div className="col-3">
+                        <div className="col-3 col-md-3">
                             <FormInput label="Quantity" setValue={setQuantity} type="number"/>
                         </div>
-                        <div className="col-3">
+                        <div className="col-3 col-md-3">
                             <FormInput label="Rate" setValue={setRate} type="number"/>
                         </div>
-                        <div className="col-3">
+                        <div className="col-3 col-md-3">
                             <button className="butn" onClick={addItem}>Add</button>
                         </div>
 
@@ -157,7 +157,7 @@ const AddPurchase = () => {
                             {(addedItems) && <Table data={addedItems} onEdit={onEditHandler} onDelete={onDeleteHandler} tableOnly isDark isSmall noPagination />}
                         </div>
                     </div>
-                    <div className="ms-auto col-1 mt-3">
+                    <div className="ms-auto col-3 col-md-1 mt-3">
                         <button disabled={addedItems.length === 0} className="butn col-12" onClick={saveHandler}>Save</button>
                     </div>
                 </div>

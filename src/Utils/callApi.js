@@ -13,7 +13,7 @@ const CallAPI = async (endpoint, method = "GET", params = null) => {
         if(method.toLowerCase() === "post") options['body']=JSON.stringify(params);
         else if(method.toLowerCase() === "get" && params) endpoint = endpoint+"?"+Object.keys(params).map(k=>`${k}=${params[k]}`).join('&');
 
-        const url = "http://localhost:5219/api/" + endpoint;
+        const url = "http://121.52.154.50:5219/api/" + endpoint;
 
         const res = await fetch(url,options);
 

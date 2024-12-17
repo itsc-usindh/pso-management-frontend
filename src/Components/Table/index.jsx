@@ -66,7 +66,7 @@ const Table = ({ title, data, onView, onEdit, onDelete, tableOnly=false, isDark=
                             <tbody>
                                 {tableData.map((row,index) =>
                                     <tr key={index}>
-                                        {Object.keys(row).map(rowItem => <td key={rowItem}>{row[rowItem]?.toString().startsWith("http") ? <img src={row[rowItem]?.toString()} alt=""/>: <p className="m-0">{row[rowItem]?.toString()}</p> }</td>)}
+                                        {Object.keys(row).map(rowItem => <td key={rowItem} className={rowItem}>{row[rowItem]?.toString().startsWith("http") ? <img src={row[rowItem]?.toString()} alt=""/>: <p className="m-0">{row[rowItem]?.toString()}</p> }</td>)}
                                         {(onEdit||onDelete||onView) &&
                                         <td>
                                             <div className="d-flex justify-content-center">
