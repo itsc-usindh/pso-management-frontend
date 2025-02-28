@@ -8,6 +8,7 @@ import AddPurchase from "./Screens/purchase/addPurchase";
 import ListDelivery from "./Screens/delivery/lisDelivery";
 import AddDelivery from "./Screens/delivery/addDelivery";
 import Inventory from "./Screens/inventory";
+import AddInventory from "./Screens/inventory/addInventory";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -20,6 +21,7 @@ function App() {
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/listPurchase" element={<ListPurchase />} />
           <Route path="/addPurchase" element={<AddPurchase />} />
+          <Route path="/addInventory" element={<AddInventory />} />
           <Route path="/listDelivery" element={<ListDelivery />} />
           <Route path="/addDelivery" element={<AddDelivery />} />
         </Routes>

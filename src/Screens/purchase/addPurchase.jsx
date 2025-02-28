@@ -118,7 +118,7 @@ const AddPurchase = () => {
 
             <div className="px-3">
                 <div className="box floating-heading">
-                    <h2 className="ps-2 mb-4 heading">Add new Purchase</h2>
+                    <h2 className="ps-2 mb-4 heading">Add Stock</h2>
 
                     <div className="form row">
                         <div className="col-md-6 mb-3">

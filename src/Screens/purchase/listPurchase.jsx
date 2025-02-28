@@ -29,7 +29,7 @@ const ListPurchase = () => {
   }
   return (
     <>
-      <Topbar title={"Purchase / List"} />
+      <Topbar title={"Stock / List"} />
 
       {selectedRow&&<SlideIn show={showSlideIn} setShowSlideIn={setShowSlideIn} title="Items">
         {selectedRow && <Table data={selectedRow.items} tableOnly isDark isSmall noPagination />}
@@ -40,7 +40,7 @@ const ListPurchase = () => {
         </div>}
       </SlideIn>}
 
-      <Table title="Purchase List" data={data} onView={onRowViewHandler} />
+      <Table title="Stock Purchase List" data={data} onView={onRowViewHandler} />
     </>
   );
 }

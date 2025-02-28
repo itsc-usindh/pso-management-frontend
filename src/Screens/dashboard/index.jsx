@@ -13,20 +13,19 @@ const Dashboard = () => {
             <div className="row m-0">
                 <div className="col-md-4">
                     <div className="box">
-                        <h1>Reports</h1>
+                        <h1>123 <sub>Total Item</sub></h1>
                     </div>
                 </div>
 
                 <div className="col-md-4">
                     <div className="box">
-                        <h1>Reports</h1>
+                        <h1>123 <sub>Total Deleiveries</sub></h1>
                     </div>
                 </div>
 
                 <div className="col-md-4">
                     <div className="box">
-                        <h1>Reports</h1>
-                        <FormInput label="Name" type="text"/>
+                        <h1>65 <sub>Pending Deleiveries</sub></h1>
                     </div>
                 </div>
             </div>
